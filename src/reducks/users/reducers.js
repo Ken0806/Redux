@@ -6,7 +6,7 @@ import initialState from "../store/initialState";
 
 // 第一引数のstateは、現在のstateの値 or stateの初期値
 // 第二引数のactionは、userのactionの返り値
-export const UsersReducer = (state = initialState, action) => {
+export const UsersReducer = (state = initialState.users, action) => {
   switch (action.type) {
     case Actions.SIGN_IN:
       return {
